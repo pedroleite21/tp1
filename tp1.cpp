@@ -52,7 +52,7 @@ void Parada::setLongitude(int _longitude){
 	longitude = _longitude;
 }
 
-float Parada::getLongitude();{
+float Parada::getLongitude(){
 	return longitude;
 }
 
