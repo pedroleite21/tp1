@@ -6,6 +6,8 @@
 #include "parada.h"
 using namespace std;
 
+class Parada; // "Forward Reference"
+
 class Veiculo {
 	private:
 		int ID;
@@ -13,8 +15,10 @@ class Veiculo {
 		string linha;
 		char tipo; // L=lotação ou O=ônibus
 	
-		/*  */	
-		Parada* listaParadasPorOndePassa[100];	
+		//Veiculo *prox
+		//Parada *listaParadas
+
+		Parada* listaParadasPorOndePassa[100];			
 
 	public:
 		Veiculo();

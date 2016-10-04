@@ -1,3 +1,9 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+
 #include "veiculo.h"
 #include "parada.h"
 #include "estacaobike.h"

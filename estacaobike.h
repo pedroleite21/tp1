@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-class EstacaodeBike {
+class EstacaoDeBike {
 	public:
 		int ID;
 		string nome;

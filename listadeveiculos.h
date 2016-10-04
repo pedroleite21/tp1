@@ -2,20 +2,19 @@
 #define __LISTADEVEICULOS_H_
 
 #include <iostream>
+#include "veiculo.h"
 using namespace std;
 
 class listaDeVeiculos
 {
-	Veiculo* transporte; // Vetor com objetos da classe Veículo. Este votor deve
-	// ser alocado dinamicamente.
-	// Este vetor pode ser substituído por uma lista
-	// encadeada.
-public:
-	// Construtores ......
-	// sets e gets para todos os atributos
-	void carregaVeiculos (const char *nomeArquivo);
-	void ListaLinhasDeOnibus();
-	void ListaParadasDaLinha(string linha);
+	private:
+		Veiculo* transporte; //Deve ser alocado dinâmicamente 
+	public:
+		listaDeVeiculos();		
+		// sets e gets para todos os atributos
+		void carregaVeiculos (const char *nomeArquivo);
+		void ListaLinhasDeOnibus();
+		void ListaParadasDaLinha(string linha);
 
 
 };

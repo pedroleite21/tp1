@@ -39,6 +39,20 @@ void Veiculo::setTipo(char _tipo){
 	tipo = _tipo;
 }
 	
-char Veiculo::getTipo (){
+char Veiculo::getTipo(){
 	return tipo;
 }
+
+void Veiculo::RegistraParadaNoVeiculo(Parada *p) {
+	char achou = 'F';
+	int i = 0;	
+	while (!achou) {
+			if (listaParadasPorOndePassa[i]->getID() == -1) {
+				listaParadasPorOndePassa[i] = p;
+				achou = 'V';			
+			}
+			else
+				i++;
+	}
+}
+
