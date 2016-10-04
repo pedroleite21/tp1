@@ -1,5 +1,16 @@
 #include "veiculo.h"
 
+Veiculo::Veiculo() {
+	ID = -1;
+	nome = NULL;
+	linha = NULL;
+	tipo = 'N';
+
+	for (int i=0; i<100; i++) 
+		listaParadasPorOndePassa[i] = new Parada();
+
+}
+
 void Veiculo::setID(int _id) {
 	ID = _id;
 }	

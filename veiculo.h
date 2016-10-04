@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "parada.h"
 using namespace std;
 
 class Veiculo {
@@ -16,6 +17,7 @@ class Veiculo {
 		Parada* listaParadasPorOndePassa[100];	
 
 	public:
+		Veiculo();
 		void setID(int _id);
 		int getID();
 		void setNome(string _nome);
