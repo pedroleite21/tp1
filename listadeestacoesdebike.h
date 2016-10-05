@@ -1,33 +1,21 @@
-#include "estacaobike.h"
+#ifndef __LISTADEESTACOESDEBIKE_H_
+#define __LISTADEESTACOESDEBIKE_H_
 
-void EstacaoDeBike::setID(int _id){
-	ID = _id;
-}
+#include <iostream>
+#include <string>
+using namespace std;
 
-int EstacaoDeBike::getID(){
-	return ID;
-}
+class listaDeEstacoesDeBike {
+	private:
+		EstacaoDeBike *locais; // Vetor com objetos da classe EstacaoDeBike.
+	// Este vetor deve ser alocado dinamicamente.
+	// Este vetor pode ser substituído por uma lista
+	// encadeada.
+	public:
+		void InsereEstacao(EstacaoDeBike V);
+		void carregaEstacoes(const char *nomeArquivo);
+		void ListaParadasProximasDaEstacao(string estacao);
+		void ListaEstacoesDeBike();
+};
 
-void EstacaoDeBike::setNome(string _nome){
-	nome = _nome;
-}
-
-string EstacaoDeBike::getNome(){
-	return nome;
-}
-
-void EstacaoDeBike::setLatitude(int _latitude){
-	latitude = _latitude;
-}
-
-float EstacaoDeBike::getLatitude(){
-	return latitude;
-}
-
-void EstacaoDeBike::setLongitude(int _longitude){
-	longitude = _longitude;
-}
-
-float EstacaoDeBike::getLongitude(){
-	return longitude;
-}
+#endif

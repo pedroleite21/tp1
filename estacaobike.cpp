@@ -1,5 +1,12 @@
 #include "estacaobike.h"
 
+EstacaoDeBike::EstacaoDeBike(){
+	ID = -1;
+	nome = NULL;
+	latitude = -1.0;
+	longitude = -1.0;	
+}
+
 void EstacaoDeBike::setID(int _id){
 	ID = _id;
 }

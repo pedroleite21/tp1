@@ -12,6 +12,7 @@ class EstacaoDeBike {
 		float latitude;
 		float longitude;
 	private:
+		EstacaoDeBike();
 		void setID(int _id);
 		int getID();
 		void setNome(string _nome);
